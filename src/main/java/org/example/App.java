@@ -22,10 +22,11 @@ public class App
 
         Student student = new Student();
         student.setId(2);
-        student.setName("Alex");
-        student.setCity("Dallas");
+        student.setName("Alex Block");
+        student.setCity("New Mexico");
 
-        int insert = studentDaoImp.insert(student);
-        System.out.println("No of rows added are " + insert);
+        int update = studentDaoImp.update(student);
+        System.out.println("No of rows added are " + update);
+
     }
 }
