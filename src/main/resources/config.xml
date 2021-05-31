@@ -19,4 +19,8 @@
             <ref bean="ds"/>
         </property>
     </bean>
+
+    <bean class="org.example.jdbc.dao.StudentDaoImp" name="studentDaoImp">
+        <property name="jdbcTemplate" ref= "jdbcTemplate"/>
+    </bean>
 </beans>
